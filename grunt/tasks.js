@@ -34,7 +34,7 @@ module.exports = function (grunt) {
 
 
 //    grunt.registerTask('default', ['server.normal']);
-    grunt.registerTask('default', ['server.node']);
+    grunt.registerTask('default', ['package', 'server.node']);
 
     grunt.registerTask('prepare', ['copyFiles.baseLibs', 'copyFiles.fonts', 'wraper.libs']);
 
